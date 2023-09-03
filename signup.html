@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <title>Sign-Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="signup-form-box">
+            <h1 id="title">Sign Up</h1>
+            <form action="/process-signup.php" method="post" novalidate>
+                <div class="input-group">
+                    <div class="input-field" id="inputusername">
+                        <i class="fa-sharp fa-regular fa-user" style="color: #183d3d;"></i>
+                        <input type="text" id = "username" name="Username" placeholder="Username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-sharp fa-regular fa-envelope" style="color: #183d3d"></i>
+                        <input type="email" id ="email" name="Email" placeholder="Email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-sharp fa-solid fa-lock" style="color: #183d3d;"></i> 
+                        <input type="password" id="password" name="Password" placeholder="Password">
+                    </div>
+                    <div class="forgotpass">
+                        <p>Forgot Password?</p>
+                        <a href="/">Click Here</a>
+                    </div>
+                    <div class="signup-buttons">
+                        <button type="button" id="signupbtn">Sign-Up</button>
+                        <button type="button" id="signinbtn" class="disable">Sign-in</button>
+                    </div>
+                    <div class="submit">
+                        <button class="submitbtn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="/app.js"></script>
+</body>
+</html>
